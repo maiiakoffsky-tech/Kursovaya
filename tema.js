@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setTheme(theme) {
         const basePath = theme === 'dark' ? 'dark/' : 'light/';
-        const iconSrc = theme === 'dark' ? 'img/svetltem.svg' : 'img/vkltm.svg'; // Исправлен опечатка в имени файла
+        const iconSrc = theme === 'dark' ? 'img/svetltem.svg' : 'img/vkltemn.svg';
 
         if (themeLink) themeLink.setAttribute('href', basePath + 'style.css');
 

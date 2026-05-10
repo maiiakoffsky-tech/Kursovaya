@@ -68,7 +68,13 @@ body {
   box-shadow: -5px 0 20px rgba(0,0,0,0.25) !important;
   overflow-y: auto !important;
   display: block !important;
+  left: auto !important;
+  transform: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
+
+
 
 #menuPanel.open {
   right: 0 !important;
@@ -820,4 +826,5 @@ footer .titlefoot {
   object-fit: contain;
 }
 
-} /* Закрывающая скобка @media */
+
+
