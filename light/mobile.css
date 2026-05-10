@@ -58,7 +58,7 @@ body {
   position: fixed !important;
   top: 0 !important;
   right: -100% !important;
-  width: 85% !important;
+  width: 60% !important;
   max-width: 300px !important;
   height: 100vh !important;
   background-color: #FFF9F0 !important;
@@ -73,31 +73,28 @@ body {
   visibility: visible !important;
   opacity: 1 !important;
 }
-
-
-
 #menuPanel.open {
   right: 0 !important;
 }
 
 #menuPanel ul {
-  list-style: none !important;
-  padding: 0 20px !important;
-  margin: 0 !important;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
 }
 
 #menuPanel ul li {
-  margin-bottom: 25px !important;
+  margin-bottom: 25px;
 }
 
 #menuPanel ul li a {
-  text-decoration: none !important;
-  color: #1E2A2E !important;
-  font-size: 18px !important;
-  font-family: jost !important;
-  display: block !important;
-  text-align: center !important;
-  padding: 8px 0 !important;
+  text-decoration: none;
+  color: #1E2A2E;
+  font-size: 18px;
+  font-family: jost;
+  display: block;
+  text-align: center;
+  padding: 8px 0;
 }
 
 /* Скрываем десктопное меню на мобильном */
@@ -105,7 +102,6 @@ body {
 .navv-menu2 {
   display: none !important;
 }
-
 /* ===== ОСТАЛЬНЫЕ СТИЛИ (БЕЗ !important) ===== */
 .lakrica {
   margin-top: 20px;
@@ -131,13 +127,12 @@ body {
 }
 
 .g {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-family: jost;
   text-align: center;
 }
-
 .poprob {
   padding: 12px 28px;
   font-size: 16px;
@@ -151,7 +146,7 @@ body {
 
 .langform {
   position: relative;
-  width: 100%;
+  width: 300px;
   max-width: 100%;
   margin: 20px 0;
   padding: 20px 15px;
@@ -169,7 +164,7 @@ body {
 }
 
 .langform .subtitle {
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   font-family: jost;
   color: #6B6B6B;
@@ -825,6 +820,6 @@ footer .titlefoot {
   display: block;
   object-fit: contain;
 }
-
+}
 
 
