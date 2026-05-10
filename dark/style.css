@@ -234,6 +234,7 @@ body {
     min-width: 200px;
     background: transparent;
     border: 3px solid #FFF9F0;
+    background-color: none;
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -286,7 +287,6 @@ body {
 .next {
     background-color: #B85D3F;
     color: #FFF9F0;
-    border: none;
     padding: 18px 20px;
     margin-top: 10px;
     font-size: 21px;
@@ -621,7 +621,6 @@ body {
     align-self: center;
 }
 /* ===== КУРСЫ ===== */
-/* Темная тема - Курсы */
 .coursses {
     max-width: none;
     margin: 80px auto;
@@ -790,7 +789,6 @@ body {
 }
 
 /*Контакты*/
-/*Контакты - Тёмная тема*/
 .contactpage {
     padding: 60px 0 0 0;
 }
@@ -807,7 +805,7 @@ body {
 .search-icon {
     width: 40px;
     height: 40px;
-    background-image: url('../img/searckdark.svg');
+    background-image: url('../img/searchh.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -921,7 +919,6 @@ body {
 }
 
 /*О нас*/
-/*О нас - Тёмная тема*/
 .aboutpage {
     max-width: 1400px;
     margin: 60px auto;
@@ -1006,7 +1003,7 @@ body {
     line-height: 1.5;
 }
 
-/* Отзывы - Тёмная тема */
+/* Отзывы*/
 .scrollotsuvy {
     margin: 80px 0;
     background-color: transparent;
@@ -1102,7 +1099,6 @@ body {
     color: #E67E5A;
 }
 /*Личный кабинет*/
-/* ===== ЛИЧНЫЙ КАБИНЕТ (ТЕМНАЯ ТЕМА) ===== */
 .person {
     min-height: 70vh;
     display: flex;
@@ -1305,6 +1301,5 @@ footer p {
     margin-top: 20px;
 }
 .burger-icon {
-    opacity: 0 !important;
-    pointer-events: none !important;
+    opacity: 0;
 }
