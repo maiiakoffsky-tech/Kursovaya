@@ -191,6 +191,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         display: flex;
+        margin-left: -10px;
         flex-wrap: wrap;
     }
     .checkboxx {
@@ -325,7 +326,7 @@
         margin-top: 8px;
     }
 
-    .price {
+    .intprice {
         font-size: 20px;
         font-weight: bold;
         font-family: jost;
@@ -529,10 +530,9 @@
         font-family: jost;
     }
 
-    .coursses {
-        margin: 30px 15px;
+     .coursses {
+        margin: 60px 15px;
     }
-
     .tittlecours {
         font-size: 22px;
         font-family: jost;
@@ -564,7 +564,7 @@
     .langcore {
         font-size: 22px;
         font-family: jost;
-        color: #EAEAEA;
+        color: #1E2A2E;
     }
 
     .lvlcore {
@@ -576,14 +576,7 @@
     .notecore p {
         font-size: 13px;
         font-family: jost;
-        color: #EAEAEA;
-    }
-
-    .intprice {
-        font-size: 20px;
-        font-weight: bold;
-        font-family: jost;
-        color: #EAEAEA;
+        color: #1E2A2E;
     }
 
     .droburok {

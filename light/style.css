@@ -1245,6 +1245,10 @@ footer p {
 .floating-theme-icon:hover {
     transform: scale(1.2);
 }
+/* ===== БУРГЕР (скрыт на десктопе) ===== */
+.burger-icon {
+    display: none; /* Скрыт по умолчанию */
+}
 /* ===== ИКОНКИ В НАВИГАЦИИ ===== */
 .navv-menu img,
 .navv-menu2 img {

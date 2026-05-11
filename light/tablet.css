@@ -186,7 +186,7 @@ body {
     flex-wrap: wrap;
     gap: 10px 20px;
     margin-top: 40px;
-    margin-left: 30px;
+    margin-left: -10px;
     margin-bottom: 40px;
 }
 
@@ -673,11 +673,6 @@ footer p {
     margin: 80px auto;
 }
 
-.startsect {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
 .tittlecours {
     font-family: jost;
     font-size: 30px;
@@ -687,25 +682,22 @@ footer p {
 
 .courssub {
     font-family: jost;
-    font-size: 20px;
+    font-size: 22px;
     color: #6B6B6B;
 }
 
 .cursk {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .karddcore {
     flex: 0 0 auto;
-    width: 100%;
-    max-width: 800px;
-    min-width: 300px;
+    min-width: 320px;
+    max-width: 400px;
+    min-height: 550px;
+    padding: 30px;
     border-radius: 40px;
-    padding: 40px;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     background-size: cover;
@@ -713,7 +705,6 @@ footer p {
     background-position: center;
     box-shadow: 0 10px 30px rgba(132, 71, 10, 0.84);
     height: auto;
-    min-height: 600px;
 }
 
 .karddcore:hover {
@@ -840,16 +831,18 @@ footer p {
     background-color: #B85D3F;
     color: white;
     border: none;
-    padding: 5px 10px;
-    font-size: 18px;
     font-family: jost;
     border-radius: 40px;
     cursor: pointer;
-    width: 90%;
     display: block;
     position: absolute;
     bottom: 20px;
-    left: 10px;
+    font-size: 20px;
+    padding: 15px;
+    bottom: 30px;
+    left: 20px;
+    width: 85%;
+    
 }
 
 .zapissbtn:hover {
@@ -1183,21 +1176,21 @@ footer p {
 }
 /* ===== КНОПКА ПЕРЕКЛЮЧЕНИЯ ТЕМЫ ===== */
 .floating-theme-icon {
-    position: fixed !important;
-    top: 20px !important;
-    right: 20px !important;
-    width: 60px !important;
-    height: 60px !important;
-    cursor: pointer !important;
-    z-index: 99999 !important;
-    transition: transform 0.3s ease !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 99999;
+    transition: transform 0.3s ease;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 .floating-theme-icon:hover {
-    transform: scale(1.2) !important;
+    transform: scale(1.2);
 }
 
 /* ===== ЛИЧНЫЙ КАБИНЕТ (ВХОД И РЕГИСТРАЦИЯ) ===== */
@@ -1221,12 +1214,12 @@ footer p {
 /* Жёсткое обнуление отступов */
 .person,
 .contactpage {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0;
+    margin: 0;
 }
 
 .aboutpage {
-    margin: 20px auto !important;
+    margin: 20px auto;
 }
 .formlogin, .formregister {
     flex: 1;
@@ -1328,4 +1321,7 @@ footer p {
     height: auto;
     display: block;
     object-fit: contain;
+}
+.burger-icon {
+    display: none;
 }

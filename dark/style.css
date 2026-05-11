@@ -24,7 +24,59 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 }
+/* Мобильная версия (<= 768px) */
+@media (max-width: 768px) {
+    .navv-menu ul {
+        display: none; /* Прячем горизонтальное меню */
+    }
+    .burger-icon {
+        display: block; /* Показываем бургер */
+        cursor: pointer;
+    }
+    #menuPanel {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #FFF9F0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        z-index: 100;
+        display: none; /* Скрыто по умолчанию */
+    }
+    #menuPanel.active {
+        display: block; /* Показываем, когда JS добавляет класс .active */
+    }
+    #menuPanel ul {
+        list-style: none;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #menuPanel a {
+        text-decoration: none;
+        color: #1E2A2E;
+        font-size: 18px;
+        font-family: jost;
+        display: block;
+        padding: 5px 0;
+    }
+}
 
+/* ===== ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ (виден на десктопе) ===== */
+.floating-theme-icon {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+
+.floating-theme-icon:hover {
+    transform: scale(1.2);
+}
 /*--Одинаковая шапка для всего кроме главной--*/
 .header2 {
     width: 100%;
@@ -1301,5 +1353,5 @@ footer p {
     margin-top: 20px;
 }
 .burger-icon {
-    opacity: 0;
+    display: none;
 }

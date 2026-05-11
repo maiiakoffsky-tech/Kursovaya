@@ -2,20 +2,34 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== ТЕМА =====
     const themeToggle = document.getElementById('themeToggle');
     const themeLink = document.getElementById('theme-css');
+    const tabletLink = document.getElementById('tablet-css');
+    const mobileLink = document.getElementById('mobile-css');
 
     function setTheme(theme) {
         const basePath = theme === 'dark' ? 'dark/' : 'light/';
         const iconSrc = theme === 'dark' ? 'img/svetltem.svg' : 'img/vkltemn.svg';
 
+        // Основной стиль
         if (themeLink) themeLink.setAttribute('href', basePath + 'style.css');
 
-        const mobileLink = document.querySelector('link[href*="mobile.css"]');
-        if (mobileLink) mobileLink.setAttribute('href', basePath + 'mobile.css');
+        // Планшетный стиль
+        if (tabletLink) {
+            tabletLink.setAttribute('href', basePath + 'tablet.css');
+            tabletLink.setAttribute('media', 'screen and (min-width: 600px) and (max-width: 1024px)');
+        }
 
+        // Мобильный стиль
+        if (mobileLink) {
+            mobileLink.setAttribute('href', basePath + 'mobile.css');
+            mobileLink.setAttribute('media', 'screen and (max-width: 599px)');
+        }
+
+        // Иконка темы
         if (themeToggle) {
             themeToggle.src = iconSrc;
             themeToggle.alt = theme === 'dark' ? 'Светлая тема' : 'Тёмная тема';
         }
+
         localStorage.setItem('theme', theme);
     }
 
