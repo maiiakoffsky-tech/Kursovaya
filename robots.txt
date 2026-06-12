@@ -1,0 +1,8 @@
+User-agent: * 
+Disallow: /light/
+Disallow: /dark/
+Disallow: /img/
+Disallow: /registr.html
+Allow: /light/*.css
+Allow: /dark/*.css
+Sitemap: https://maiiakoffsky.ru/sitemap.xml
