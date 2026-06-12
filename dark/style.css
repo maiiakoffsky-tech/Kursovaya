@@ -24,28 +24,37 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 }
+
 /* Мобильная версия (<= 768px) */
 @media (max-width: 768px) {
     .navv-menu ul {
-        display: none; /* Прячем горизонтальное меню */
+        display: none;
+        /* Прячем горизонтальное меню */
     }
+
     .burger-icon {
-        display: block; /* Показываем бургер */
+        display: block;
+        /* Показываем бургер */
         cursor: pointer;
     }
+
     #menuPanel {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background: #FFF9F0;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         z-index: 100;
-        display: none; /* Скрыто по умолчанию */
+        display: none;
+        /* Скрыто по умолчанию */
     }
+
     #menuPanel.active {
-        display: block; /* Показываем, когда JS добавляет класс .active */
+        display: block;
+        /* Показываем, когда JS добавляет класс .active */
     }
+
     #menuPanel ul {
         list-style: none;
         padding: 20px;
@@ -53,6 +62,7 @@ body {
         flex-direction: column;
         gap: 15px;
     }
+
     #menuPanel a {
         text-decoration: none;
         color: #1E2A2E;
@@ -77,6 +87,7 @@ body {
 .floating-theme-icon:hover {
     transform: scale(1.2);
 }
+
 /*--Одинаковая шапка для всего кроме главной--*/
 .header2 {
     width: 100%;
@@ -148,11 +159,13 @@ body {
     color: #FFF9F0;
 }
 
-.search img, .user img {
+.search img,
+.user img {
     width: 40px;
     height: auto;
     display: block;
 }
+
 .search-icon {
     width: 40px;
     height: 40px;
@@ -170,6 +183,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 /*Конец одинаковой шапки*/
 
 /*Главная страница*/
@@ -623,7 +637,11 @@ body {
     flex-direction: column;
 }
 
-.prepphoto1,.prepphoto2,.prepphoto3,.prepphoto4,.prepphoto5 {
+.prepphoto1,
+.prepphoto2,
+.prepphoto3,
+.prepphoto4,
+.prepphoto5 {
     width: calc(100% + 50px);
     height: 400px;
     margin: 0 -25px 20px -25px;
@@ -634,11 +652,25 @@ body {
     flex-shrink: 0;
 }
 
-.prepphoto1 { background-image: url('../img/prepod1.jpg'); }
-.prepphoto2 { background-image: url('../img/prepod2.jpg'); }
-.prepphoto3 { background-image: url('../img/prepod3.jpg'); }
-.prepphoto4 { background-image: url('../img/prepod4.jpg'); }
-.prepphoto5 { background-image: url('../img/prepod5.jpg'); }
+.prepphoto1 {
+    background-image: url('../img/prepod1.jpg');
+}
+
+.prepphoto2 {
+    background-image: url('../img/prepod2.jpg');
+}
+
+.prepphoto3 {
+    background-image: url('../img/prepod3.jpg');
+}
+
+.prepphoto4 {
+    background-image: url('../img/prepod4.jpg');
+}
+
+.prepphoto5 {
+    background-image: url('../img/prepod5.jpg');
+}
 
 .prepname {
     font-family: jost;
@@ -672,6 +704,7 @@ body {
     border-radius: 30px;
     align-self: center;
 }
+
 /* ===== КУРСЫ ===== */
 .coursses {
     max-width: none;
@@ -701,7 +734,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 30px;
+    gap: 80px;
     overflow: visible;
     padding: 20px 0;
 }
@@ -709,7 +742,7 @@ body {
 .karddcore {
     flex: 1 1 0;
     min-width: 280px;
-    max-width: 480px;
+    max-width: 380px;
     border-radius: 40px;
     padding: 40px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -718,43 +751,100 @@ body {
     border: 3px solid #FFF9F0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     height: auto;
-    min-height: 600px;
+    min-height: 500px;
 }
 
 .karddcore:hover {
     transform: scale(1.02);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
 }
-.eng1,.eng2,.eng3 {
+
+.eng1,
+.eng2,
+.eng3 {
     background-size: cover;
     background-position: center;
 }
-.eng1 { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/english); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.eng2 { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/eng2); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.eng3 { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/eng3); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.chin1 { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin1.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.chin2 { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin2.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.chin3 { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin3.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.deutsch { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/deutsch.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.france { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/france.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.korea { background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/korea.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+.eng1 {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/english);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eng2 {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/eng2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eng3 {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/eng3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chin1 {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin1.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chin2 {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin2.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.chin3 {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin3.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deutsch {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/deutsch.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.france {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/france.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.korea {
+    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/korea.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .langcore {
     font-family: jost;
-    font-size: 34px;
+    font-size: 30px;
     color: #FFF9F0;
     margin-bottom: 15px;
 }
 
 .lvlcore {
     font-family: jost;
-    font-size: 26px;
+    font-size: 20px;
     color: #E67E5A;
 }
 
 .notecore p {
     font-family: jost;
-    font-size: 26px;
+    font-size: 20px;
     color: #FFF9F0;
     line-height: 1.1;
     opacity: 0.9;
@@ -854,6 +944,7 @@ body {
     gap: 60px;
     padding: 0 20px;
 }
+
 .search-icon {
     width: 40px;
     height: 40px;
@@ -871,6 +962,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .continfo {
     flex: 1;
     min-width: 280px;
@@ -920,7 +1012,6 @@ body {
     padding: 40px;
     border-radius: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    border: 3px solid #FFF9F0;
 }
 
 .formtittle {
@@ -930,25 +1021,27 @@ body {
     margin-bottom: 25px;
 }
 
-.forminput, .formtxtt {
+.forminput,
+.formtxtt {
     width: 100%;
     padding: 14px 18px;
     margin-bottom: 20px;
     font-family: jost;
     font-size: 16px;
-    border: 2px solid #FFF9F0;
     border-radius: 20px;
     background-color: transparent;
     color: #FFF9F0;
     transition: border-color 0.3s;
 }
 
-.forminput::placeholder, .formtxtt::placeholder {
+.forminput::placeholder,
+.formtxtt::placeholder {
     color: #FFF9F0;
     opacity: 0.6;
 }
 
-.forminput:focus, .formtxtt:focus {
+.forminput:focus,
+.formtxtt:focus {
     outline: none;
     border-color: #B85D3F;
 }
@@ -1011,12 +1104,6 @@ body {
     margin-bottom: 50px;
 }
 
-.prosss {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-}
 
 .proscard {
     flex: 1;
@@ -1034,10 +1121,21 @@ body {
 .proscard:hover {
     transform: translateY(-5px);
 }
-
 .iconpros {
-    font-size: 52px;
-    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.iconpros img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
 }
 
 .prostittle {
@@ -1057,7 +1155,6 @@ body {
 
 /* Отзывы*/
 .scrollotsuvy {
-    margin: 80px 0;
     background-color: transparent;
     border: 3px solid #FFF9F0;
     border-radius: 40px;
@@ -1066,7 +1163,7 @@ body {
 
 .tittleotsuvy {
     font-family: jost;
-    font-size: 42px;
+    font-size: 30px;
     color: #FFF9F0;
     text-align: center;
     margin-bottom: 40px;
@@ -1077,16 +1174,6 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: thin;
-    -webkit-overflow-scrolling: touch;
-}
-
-.contscroll::-webkit-scrollbar {
-    height: 8px;
-}
-
-.contscroll::-webkit-scrollbar-track {
-    background: #2B3732;
-    border-radius: 10px;
 }
 
 .contscroll::-webkit-scrollbar-thumb {
@@ -1103,12 +1190,14 @@ body {
 }
 
 .kardots {
-    flex-shrink: 0;
-    width: 350px;
+    flex: 1 1 260px;
+    max-width: 400px;
+    min-width: 350px;
+    width: auto;
     background-color: transparent;
     border: 2px solid #FFF9F0;
     border-radius: 30px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -1118,15 +1207,14 @@ body {
 }
 
 .iconuskard {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto 20px;
-    background-image: url('../img/user.png');
+    background-image: url('../img/usver.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    filter: brightness(0) invert(1);
 }
 
 .otsname h3 {
@@ -1150,6 +1238,7 @@ body {
     font-size: 16px;
     color: #E67E5A;
 }
+
 /*Личный кабинет*/
 .person {
     min-height: 70vh;
@@ -1169,12 +1258,14 @@ body {
     justify-content: center;
 }
 
-.formlogin, .formregister {
+.formlogin,
+.formregister {
     flex: 1;
     min-width: 300px;
 }
 
-.logcard, .regcard {
+.logcard,
+.regcard {
     background-color: transparent;
     border-radius: 30px;
     padding: 40px;
@@ -1183,7 +1274,8 @@ body {
     height: 100%;
 }
 
-.tittlelog, .tittlereg {
+.tittlelog,
+.tittlereg {
     font-family: jost;
     font-size: 32px;
     color: #FFF9F0;
@@ -1191,7 +1283,8 @@ body {
     margin-bottom: 10px;
 }
 
-.tittlecardlog, .tittlecardreg {
+.tittlecardlog,
+.tittlecardreg {
     font-family: jost;
     font-size: 32px;
     color: #FFF9F0;
@@ -1199,11 +1292,13 @@ body {
     margin-bottom: 10px;
 }
 
-.allinputlog, .allinputreg {
+.allinputlog,
+.allinputreg {
     margin-bottom: 20px;
 }
 
-.allinputlog label, .allinputreg label {
+.allinputlog label,
+.allinputreg label {
     display: block;
     font-family: jost;
     font-size: 14px;
@@ -1211,7 +1306,8 @@ body {
     margin-bottom: 6px;
 }
 
-.loginput, .reginput {
+.loginput,
+.reginput {
     width: 100%;
     padding: 12px 16px;
     font-family: jost;
@@ -1223,17 +1319,20 @@ body {
     transition: border-color 0.3s;
 }
 
-.loginput::placeholder, .reginput::placeholder {
+.loginput::placeholder,
+.reginput::placeholder {
     color: #FFF9F0;
     opacity: 0.6;
 }
 
-.loginput:focus, .reginput:focus {
+.loginput:focus,
+.reginput:focus {
     outline: none;
     border-color: #B85D3F;
 }
 
-.submitlog, .submitreg {
+.submitlog,
+.submitreg {
     background-color: #B85D3F;
     color: #FFF9F0;
     border: none;
@@ -1247,11 +1346,13 @@ body {
     margin-top: 10px;
 }
 
-.submitlog:hover, .submitreg:hover {
+.submitlog:hover,
+.submitreg:hover {
     background-color: #9A4A32;
 }
 
-.ssilkreg, .ssilklog {
+.ssilkreg,
+.ssilklog {
     text-align: center;
     font-family: jost;
     font-size: 14px;
@@ -1259,17 +1360,21 @@ body {
     margin-top: 20px;
 }
 
-.ssilkreg a, .ssilklog a {
+.ssilkreg a,
+.ssilklog a {
     color: #E67E5A;
     text-decoration: none;
 }
 
-.ssilkreg a:hover, .ssilklog a:hover {
+.ssilkreg a:hover,
+.ssilklog a:hover {
     text-decoration: underline;
 }
+
 /*Футер*/
 footer {
-    background-color: #003546;;
+    background-color: #003546;
+    ;
     color: #FFFFFF;
     width: 100%;
     margin-top: 80px;
@@ -1283,11 +1388,11 @@ footer {
     gap: 20px;
     background-color: #ffe3b9;
     width: 50%;
-    height: 100px;
+    height: 60px;
     border-radius: 0 40px 40px 0;
     padding: 0 20px;
     position: absolute;
-    bottom: 30px;
+    bottom: 140px;
     left: 0;
 }
 
@@ -1299,7 +1404,7 @@ footer {
 }
 
 footer .titlefoot {
-    font-size: 30px;
+    font-size: 20px;
     font-family: k2d, jost;
     margin-top: 10px;
     text-align: center;
@@ -1307,8 +1412,8 @@ footer .titlefoot {
 
 .VK {
     background-image: url('../img/VK.png');
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1316,8 +1421,8 @@ footer .titlefoot {
 
 .Max {
     background-image: url('../img/icon-max-bl.png');
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1325,15 +1430,15 @@ footer .titlefoot {
 
 .odnokl {
     background-image: url('../img/odnokl.png');
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 footer p {
-    font-size: 30px;
+    font-size: 20px;
     font-family: jost;
     margin-bottom: 15px;
     margin-left: 60px;
@@ -1352,6 +1457,12 @@ footer p {
 .info {
     margin-top: 20px;
 }
+
+.copyright {
+    text-align: center;
+    margin-top: 80px;
+}
+
 .burger-icon {
     display: none;
 }

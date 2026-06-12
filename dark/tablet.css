@@ -1,10 +1,13 @@
-/* ===== ТЁМНАЯ ТЕМА ДЛЯ ПЛАНШЕТА ===== */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 810px) and (max-width: 1024px) {
 
     /* ОБЩИЕ ПЛАНШЕТНЫЕ СТИЛИ */
     .hheadeer {
-        height: 700px;
         width: 95%;
+
+    }
+
+    main {
+        min-width: 360px;
     }
 
     .g {
@@ -43,7 +46,6 @@
         min-width: 200px;
         background-color: none;
         border: 3px solid #E0D6C8;
-        ;
         border-radius: 30px;
         padding: 10px;
     }
@@ -124,26 +126,26 @@
     }
 
     .h4mar {
-    margin-left: 0;
-    font-size: 32px;
-    max-width: 100%;
-    text-align: center;
-}
+        margin-left: 0;
+        font-size: 32px;
+        max-width: 100%;
+        text-align: center;
+    }
 
-.textt {
-    margin-top: 20px;
-    margin-left: 20%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 8px;
-}
+    .textt {
+        margin-top: 20px;
+        margin-left: 20%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 8px;
+    }
 
-.textt p {
-    margin: 0;
-    font-size: 26px;
-}
+    .textt p {
+        margin: 0;
+        font-size: 26px;
+    }
 
     .marafon1 {
         width: 90%;
@@ -251,8 +253,10 @@
         font-size: 40px;
     }
 
-    .courssub {
+     .courssub {
+        font-family: jost;
         font-size: 22px;
+        color: #6B6B6B;
     }
 
     .cursk {
@@ -261,65 +265,198 @@
     }
 
     .karddcore {
-        min-width: 320px;
-        max-width: 400px;
-        min-height: 550px;
+        flex: 0 0 auto;
+        min-width: 200px;
+        max-width: 280px;
+        min-height: 300px;
         padding: 30px;
+        border-radius: 40px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 10px 30px rgba(67, 33, 22, 0.84);
+        height: auto;
+    }
+
+    .karddcore:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 40px rgba(67, 33, 22, 0.9);
+    }
+
+    .eng1 {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/english);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .eng2 {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/eng2);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .eng3 {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/eng3);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .chin1 {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/chin1.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .chin2 {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)),
+            url(../img/chin2.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .chin3 {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)),
+            url(../img/chin3.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .deutsch {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)),
+            url(../img/deutsch.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .france {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)),
+            url(../img/france.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .korea {
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)),
+            url(../img/korea.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .langcore {
-        font-size: 28px;
+        font-family: jost;
+        font-size: 16px;
+        color: #EAEAEA;
+        margin-bottom: 5px;
     }
 
     .lvlcore {
-        font-size: 22px;
+        font-family: jost;
+        font-size: 16px;
+        color: #B85D3F;
+        margin-bottom: 10px;
     }
 
     .notecore p {
-        font-size: 18px;
+        font-family: jost;
+        font-size: 14px;
+        color: #EAEAEA;
+    }
+
+    .pricecore {
+        margin: 10px 0 20px;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
     }
 
     .intprice {
-        font-size: 26px;
+        font-family: jost;
+        font-size: 16px;
+        font-weight: bold;
+        color: #EAEAEA;
     }
 
     .droburok {
-        font-size: 18px;
+        font-family: jost;
+        font-size: 14px;
+        color: #6B6B6B;
     }
 
     .zapissbtn {
-        font-size: 20px;
-        padding: 15px;
+        background-color: #B85D3F;
+        color: #EAEAEA;
+        border: none;
+        font-family: jost;
+        border-radius: 20px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
         bottom: 30px;
+        font-size: 15px;
+        padding: 8px;
         left: 20px;
         width: 85%;
     }
 
-    /* БЛОК КИТАЙСКОГО */
+    .zapissbtn:hover {
+        background-color: #9A4A32;
+    }
+
+    /* Широкий блок китайского */
     .chinaas {
-        margin: 40px 20px;
+        background: linear-gradient(135deg, #1A2421 0%, #2B3732 100%);
         padding: 50px 20px;
+        margin: 40px 20px;
+    }
+
+    .contchina {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .tittlechina {
-        font-size: 36px;
+        font-family: jost;
+        font-size: 42px;
+        color: #EAEAEA;
+        margin-bottom: 20px;
     }
 
     .whynote {
-        font-size: 24px;
+        font-family: jost;
+        font-size: 30px;
+        color: #EAEAEA;
+        max-width: 1200px;
+        margin: 0 auto 50px;
+        line-height: 1.5;
     }
 
     .chiness {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
 
     /* О НАС */
     .tittleabout {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     .aboutsub {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .tittlewhy {
@@ -337,21 +474,33 @@
 
     .aboutpage {
         max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .aboutblock1 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .whysec {
+        margin-bottom: 40px;
     }
 
     /* ОТЗЫВЫ */
     .scrollotsuvy {
         margin: 60px 20px;
-        padding: 40px 20px;
+        padding: 30px 15px;
     }
 
     .tittleotsuvy {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .kardots {
         width: 300px;
         padding: 25px;
+        flex: 1 1 220px
     }
 
     .otsname h3 {
@@ -397,7 +546,7 @@
     }
 
     footer .titlefoot {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     footer p {
@@ -440,7 +589,7 @@
 
     /* Полностью скрываем бургер-панель на планшете */
     #menuPanel {
-        display: none ;
+        display: none;
         visibility: hidden;
         opacity: 0;
         pointer-events: none;

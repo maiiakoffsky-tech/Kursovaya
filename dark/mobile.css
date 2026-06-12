@@ -312,7 +312,7 @@
         background-color: transparent;
         width: 100%;
         min-width: auto;
-        height: 350px;
+        height: 250px;
         padding: 15px;
         border-radius: 25px;
         position: relative;
@@ -429,7 +429,14 @@
         padding: 4px 10px;
         border-radius: 20px;
     }
-
+    .footer-content p {
+        font-size: 16px;
+        margin-bottom: 6px;
+        font-family: jost;
+        color: #EAEAEA;
+        margin-left: 10px;
+        text-align: left;
+    }
     footer {
         height: 500px;
         background-color: #003546;
@@ -443,60 +450,51 @@
         color: #EAEAEA;
     }
 
-    .footer-content p {
-        font-size: 16px;
-        margin-bottom: 6px;
-        font-family: jost;
-        color: #EAEAEA;
-        text-align: left;
-    }
-
-    .lenta {
+    
+        .lenta {
         width: 60%;
         height: auto;
         padding: 0px 5px;
         flex-wrap: wrap;
         background-color: #FFF9F0;
-        margin-top: 15px;
         display: flex;
         align-items: center;
         gap: 10px;
+        bottom: 135px;
         border-radius: 0 20px 20px 0;
     }
 
     .VK {
-        width: 55px;
-        height: 55px;
+        width: 35px;
+        height: 35px;
         background-image: url('../img/VK.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .Max {
-        width: 38px;
-        height: 38px;
+        width: 28px;
+        height: 28px;
         background-image: url('../img/icon-max-bl.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .odnokl {
-        width: 42px;
-        height: 42px;
+        width: 32px;
+        height: 32px;
         background-image: url('../img/odnokl.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
-
-    .rejim {
-        text-align: left;
-        text-align: left;
-    }
-
     .adress,
     .info {
         margin-top: 8px;
         text-align: left;
+    }
+    .copyright {
+        font-size: 16px;
+        margin-left: 10px;
     }
     /*Конец Главной*/
     /*Общая шапка*/
@@ -636,7 +634,7 @@
     }
     /*Страница О нас*/
     .aboutpage {
-        margin: 50px 0px;
+        margin: 50px 30px;
     }
 
     .tittleabout {
@@ -660,8 +658,8 @@
     }
 
     .prosss {
-        gap: 15px;
-        flex-direction: column;
+        gap: 25px;
+        flex-direction:column;
         display: flex;
     }
 
@@ -685,13 +683,6 @@
         font-family: jost;
         color: #EAEAEA;
     }
-
-    .scrollotsuvy {
-        padding: 30px 10px;
-        background-color: #8CBAA8;
-        margin: 0px 0;
-    }
-
     .tittleotsuvy {
         font-size: 24px;
         font-family: jost;
