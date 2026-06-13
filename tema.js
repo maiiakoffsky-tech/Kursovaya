@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setTheme(theme) {
         const basePath = theme === 'dark' ? 'dark/' : 'light/';
-        const iconSrc = theme === 'dark' ? 'img/svetltem.svg' : 'img/vkltemn.svg';
+        // Иконка темы: светлая тема -> иконка для переключения на тёмную, и наоборот
+        const iconSrc = theme === 'dark' ? 'img/icons/svetltem.svg' : 'img/icons/vkltemn.svg';
 
         // Основной стиль
         if (themeLink) themeLink.setAttribute('href', basePath + 'style.css');

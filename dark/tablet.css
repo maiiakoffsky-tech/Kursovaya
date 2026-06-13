@@ -286,21 +286,21 @@
     }
 
     .eng1 {
-        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/english);
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/english.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
 
     .eng2 {
-        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/eng2);
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/eng2.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
 
     .eng3 {
-        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/eng3);
+        background: linear-gradient(rgba(67, 33, 22, 0.5), rgba(67, 33, 22, 0.5)), url(../img/eng3.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

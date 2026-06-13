@@ -29,12 +29,10 @@ body {
 @media (max-width: 768px) {
     .navv-menu ul {
         display: none;
-        /* Прячем горизонтальное меню */
     }
 
     .burger-icon {
         display: block;
-        /* Показываем бургер */
         cursor: pointer;
     }
 
@@ -43,16 +41,14 @@ body {
         top: 100%;
         left: 0;
         width: 100%;
-        background: #FFF9F0;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        background: #1E2A2E;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         z-index: 100;
         display: none;
-        /* Скрыто по умолчанию */
     }
 
     #menuPanel.active {
         display: block;
-        /* Показываем, когда JS добавляет класс .active */
     }
 
     #menuPanel ul {
@@ -65,7 +61,7 @@ body {
 
     #menuPanel a {
         text-decoration: none;
-        color: #1E2A2E;
+        color: #FFF9F0;
         font-size: 18px;
         font-family: jost;
         display: block;
@@ -73,7 +69,7 @@ body {
     }
 }
 
-/* ===== ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ (виден на десктопе) ===== */
+/* ===== ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ ===== */
 .floating-theme-icon {
     position: fixed;
     top: 60px;
@@ -110,7 +106,7 @@ body {
 }
 
 .logo {
-    background-image: url("../img/logotemn.svg");
+    background-image: url("../img/icons/logotemn.svg");
     width: 150px;
     height: 170px;
     background-position: center;
@@ -126,7 +122,7 @@ body {
 }
 
 .logo2 {
-    background-image: url('../img/logotemn.svg');
+    background-image: url('../img/icons/logotemn.svg');
     height: 70px;
     width: 70px;
     background-repeat: no-repeat;
@@ -159,17 +155,10 @@ body {
     color: #FFF9F0;
 }
 
-.search img,
-.user img {
-    width: 40px;
-    height: auto;
-    display: block;
-}
-
 .search-icon {
     width: 40px;
     height: 40px;
-    background-image: url('../img/searckdark.svg');
+    background-image: url('../img/icons/searchh.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -178,13 +167,11 @@ body {
 .user-icon {
     width: 40px;
     height: 40px;
-    background-image: url('../img/userdark.svg');
+    background-image: url('../img/icons/usver.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/*Конец одинаковой шапки*/
 
 /*Главная страница*/
 .lakrica {
@@ -219,7 +206,6 @@ body {
     flex-direction: column;
 }
 
-/* навигация главной */
 .navv {
     display: flex;
     align-items: center;
@@ -257,7 +243,6 @@ body {
     color: #FFF9F0;
 }
 
-/* центр главной */
 .centcont {
     text-align: center;
     width: 70%;
@@ -290,7 +275,6 @@ body {
     background-color: #9A4A32;
 }
 
-/* форма выбора языка на главной - ПРОЗРАЧНАЯ с контуром */
 .langform {
     position: absolute;
     left: 5%;
@@ -300,7 +284,6 @@ body {
     min-width: 200px;
     background: transparent;
     border: 3px solid #FFF9F0;
-    background-color: none;
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -367,7 +350,6 @@ body {
     background-color: #9A4A32;
 }
 
-/* марафон (главная) */
 .maraf {
     margin: 125px auto;
     display: flex;
@@ -426,7 +408,7 @@ body {
     right: 5%;
     top: 50%;
     transform: translateY(-50%) rotate(-15deg);
-    background-image: url('../img/phonemar');
+    background-image: url('../img/phonemar.png');
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
@@ -455,7 +437,6 @@ body {
     word-wrap: break-word;
 }
 
-/* карточки скидок (главная) - ПРОЗРАЧНЫЕ с толстым контуром */
 .kartochk {
     margin-top: 60px;
     display: flex;
@@ -576,7 +557,7 @@ body {
 }
 
 .gift {
-    background-image: url('../img/giftt.png');
+    background-image: url('../img/icons/giftt.png');
     width: 80px;
     height: 80px;
     background-size: contain;
@@ -590,7 +571,6 @@ body {
     color: #FFF9F0;
 }
 
-/* слайдер преподавателей */
 .prepsection {
     margin: 75px 0;
     width: 100%;
@@ -732,26 +712,26 @@ body {
 
 .cursk {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
     overflow: visible;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .karddcore {
-    flex: 1 1 0;
-    min-width: 280px;
-    max-width: 380px;
+    flex: 0 0 auto;
+    min-width: 400px;
+    max-width: 320px;
     border-radius: 40px;
-    padding: 40px;
+    padding: 30px;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     background-color: transparent;
     border: 3px solid #FFF9F0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     height: auto;
-    min-height: 500px;
+    min-height: 480px;
 }
 
 .karddcore:hover {
@@ -759,71 +739,65 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
 }
 
-.eng1,
-.eng2,
-.eng3 {
-    background-size: cover;
-    background-position: center;
-}
-
+/* Фоны для карточек курсов */
 .eng1 {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/english);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/english.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .eng2 {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/eng2);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/eng2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .eng3 {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/eng3);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/eng3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .chin1 {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin1.avif);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/chin1.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .chin2 {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin2.avif);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/chin2.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .chin3 {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/chin3.avif);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/chin3.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .deutsch {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/deutsch.avif);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/deutsch.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .france {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/france.avif);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/france.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .korea {
-    background: linear-gradient(rgba(18, 45, 42, 0.5), rgba(18, 45, 42, 0.5)), url(../img/korea.avif);
+    background: linear-gradient(rgba(18, 45, 42, 0.6), rgba(18, 45, 42, 0.6)), url(../img/korea.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -831,23 +805,25 @@ body {
 
 .langcore {
     font-family: jost;
-    font-size: 30px;
+    font-size: 28px;
     color: #FFF9F0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .lvlcore {
     font-family: jost;
-    font-size: 20px;
+    font-size: 18px;
     color: #E67E5A;
+    margin-bottom: 15px;
 }
 
 .notecore p {
     font-family: jost;
-    font-size: 20px;
+    font-size: 16px;
     color: #FFF9F0;
-    line-height: 1.1;
+    line-height: 1.3;
     opacity: 0.9;
+    margin-bottom: 8px;
 }
 
 .pricecore {
@@ -855,18 +831,19 @@ body {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 .intprice {
     font-family: jost;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     color: #FFF9F0;
 }
 
 .droburok {
     font-family: jost;
-    font-size: 24px;
+    font-size: 18px;
     color: #FFF9F0;
     opacity: 0.7;
 }
@@ -875,23 +852,21 @@ body {
     background-color: #B85D3F;
     color: #FFF9F0;
     border: none;
-    padding: 20px 20px;
-    font-size: 28px;
+    padding: 16px 10px;
+    font-size: 18px;
     font-family: jost;
-    border-radius: 40px;
+    border-radius: 20px;
     cursor: pointer;
-    width: 90%;
     display: block;
-    position: absolute;
-    bottom: 50px;
-    left: 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 .zapissbtn:hover {
     background-color: #9A4A32;
 }
 
-/* широкий блок китайского - темная тема */
+/* широкий блок китайского */
 .chinaas {
     border-radius: 40px;
     margin: 40px 20px;
@@ -945,24 +920,6 @@ body {
     padding: 0 20px;
 }
 
-.search-icon {
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/searchh.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.user-icon {
-    width: 40px;
-    height: 40px;
-    background-image: url('../img/userdark.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .continfo {
     flex: 1;
     min-width: 280px;
@@ -1012,6 +969,7 @@ body {
     padding: 40px;
     border-radius: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid #FFF9F0;
 }
 
 .formtittle {
@@ -1028,6 +986,7 @@ body {
     margin-bottom: 20px;
     font-family: jost;
     font-size: 16px;
+    border: 2px solid #FFF9F0;
     border-radius: 20px;
     background-color: transparent;
     color: #FFF9F0;
@@ -1104,6 +1063,12 @@ body {
     margin-bottom: 50px;
 }
 
+.prosss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
 
 .proscard {
     flex: 1;
@@ -1121,21 +1086,17 @@ body {
 .proscard:hover {
     transform: translateY(-5px);
 }
+
 .iconpros {
     width: 60px;
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto 15px;
 }
 
 .iconpros img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .prostittle {
@@ -1153,17 +1114,18 @@ body {
     line-height: 1.5;
 }
 
-/* Отзывы*/
+/* Отзывы */
 .scrollotsuvy {
     background-color: transparent;
     border: 3px solid #FFF9F0;
     border-radius: 40px;
     padding: 60px 20px;
+    margin: 40px 0;
 }
 
 .tittleotsuvy {
     font-family: jost;
-    font-size: 30px;
+    font-size: 42px;
     color: #FFF9F0;
     text-align: center;
     margin-bottom: 40px;
@@ -1174,10 +1136,20 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.contscroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.contscroll::-webkit-scrollbar-track {
+    background: #2B3732;
+    border-radius: 10px;
 }
 
 .contscroll::-webkit-scrollbar-thumb {
-    background: #FFF9F0;
+    background: #8CBAA8;
     border-radius: 10px;
 }
 
@@ -1190,14 +1162,14 @@ body {
 }
 
 .kardots {
-    flex: 1 1 260px;
-    max-width: 400px;
-    min-width: 350px;
-    width: auto;
+    flex-shrink: 0;
+    max-width: 380px;
+    min-width: 300px;
+    width: 320px;
     background-color: transparent;
     border: 2px solid #FFF9F0;
     border-radius: 30px;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -1207,10 +1179,10 @@ body {
 }
 
 .iconuskard {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 20px;
-    background-image: url('../img/usver.svg');
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background-image: url('../img/icons/usver.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1219,9 +1191,9 @@ body {
 
 .otsname h3 {
     font-family: jost;
-    font-size: 22px;
+    font-size: 20px;
     color: #FFF9F0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .txtots {
@@ -1229,8 +1201,8 @@ body {
     font-size: 14px;
     color: #FFF9F0;
     opacity: 0.8;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    line-height: 1.4;
+    margin-bottom: 12px;
 }
 
 .ratots {
@@ -1286,10 +1258,10 @@ body {
 .tittlecardlog,
 .tittlecardreg {
     font-family: jost;
-    font-size: 32px;
+    font-size: 28px;
     color: #FFF9F0;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .allinputlog,
@@ -1374,7 +1346,6 @@ body {
 /*Футер*/
 footer {
     background-color: #003546;
-    ;
     color: #FFFFFF;
     width: 100%;
     margin-top: 80px;
@@ -1411,7 +1382,7 @@ footer .titlefoot {
 }
 
 .VK {
-    background-image: url('../img/VK.png');
+    background-image: url('../img/icons/VK.png');
     width: 80px;
     height: 80px;
     background-size: contain;
@@ -1420,7 +1391,7 @@ footer .titlefoot {
 }
 
 .Max {
-    background-image: url('../img/icon-max-bl.png');
+    background-image: url('../img/icons/icon-max.png');
     width: 55px;
     height: 55px;
     background-size: contain;
@@ -1429,7 +1400,7 @@ footer .titlefoot {
 }
 
 .odnokl {
-    background-image: url('../img/odnokl.png');
+    background-image: url('../img/icons/odnokl.png');
     width: 60px;
     height: 60px;
     background-size: contain;
@@ -1465,4 +1436,12 @@ footer p {
 
 .burger-icon {
     display: none;
+}
+
+.navv-menu img,
+.navv-menu2 img {
+    width: 40px;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }

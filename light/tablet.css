@@ -291,7 +291,7 @@ main {
     right: 5%;
     top: 50%;
     transform: translateY(-50%) rotate(-15deg);
-    background-image: url('../img/phonemar');
+    background-image: url('../img/phonemar.png');
     box-shadow: 0 10px 30px rgba(132, 71, 17, 0.884);
     background-size: cover;
     background-repeat: no-repeat;
@@ -593,7 +593,7 @@ footer .titlefoot {
 .VK {
     width: 55px;
     height: 55px;
-    background-image: url('../img/VK.png');
+    background-image: url('../img/icons/VK.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -601,7 +601,7 @@ footer .titlefoot {
 .Max {
     width: 38px;
     height: 38px;
-    background-image: url('../img/icon-max-bl.png');
+    background-image: url('../img/icons/icon-max.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -609,7 +609,7 @@ footer .titlefoot {
 .odnokl {
     width: 42px;
     height: 42px;
-    background-image: url('../img/odnokl.png');
+    background-image: url('../img/icons/odnokl.png');
     background-size: contain;
     background-repeat: no-repeat;
 }

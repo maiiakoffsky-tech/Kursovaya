@@ -1,39 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"> <!--Объявление карты и правил для картинок-->
+
+  <!--Главная -->
   <url>
-    <loc>https://maiiakoffsky.ru/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <loc>https://maiiakoffsky.ru/index.html</loc>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/prepod1.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/prepod2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/prepod3.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/prepod4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/prepod5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/flowwii.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/flowii.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/icons/giftt.png</image:loc>
+    </image:image>
   </url>
+
+  <!--Курсы-->
   <url>
     <loc>https://maiiakoffsky.ru/courses.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/english.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/eng2.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/eng3.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/chin1.avif</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/chin2.avif</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/chin3.avif</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/deutsch.avif</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/france.avif</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/korea.avif</image:loc>
+    </image:image>
   </url>
+
+  <!--Контакты-->
   <url>
     <loc>https://maiiakoffsky.ru/contact.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!--О нас-->
   <url>
     <loc>https://maiiakoffsky.ru/aboutus.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/icons/soo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/icons/prog.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/icons/raspis.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/icons/usver.svg</image:loc>
+    </image:image>
+  </url>
+
+  <!---Вход-->
+  <url>
+    <loc>https://maiiakoffsky.ru/person.html</loc>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://maiiakoffsky.ru/person.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.3</priority>
-  </url>
+
+  <!--Регистрация-->
   <url>
     <loc>https://maiiakoffsky.ru/registr.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
+
 </urlset>

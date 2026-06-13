@@ -25,8 +25,9 @@ body {
     overflow-x: hidden;
 }
 
+/* ===== ЛОГОТИПЫ И ОБЩИЕ ЭЛЕМЕНТЫ ===== */
 .logo {
-    background-image: url("../img/logosv.svg");
+    background-image: url("../img/icons/logosv.svg");
     width: 150px;
     height: 170px;
     background-position: center;
@@ -43,7 +44,7 @@ body {
     object-fit: contain;
 }
 
-/*--Одинаковая шапка для всего кроме главной--*/
+/* ===== ОДИНАКОВАЯ ШАПКА ===== */
 .header2 {
     width: 100%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.458), rgba(255, 255, 255, 0.501)), url('../img/landishy.jpeg');
@@ -71,7 +72,7 @@ body {
 }
 
 .logo2 {
-    background-image: url('../img/logosv.svg');
+    background-image: url('../img/icons/logosv.svg');
     height: 70px;
     width: 70px;
     background-repeat: no-repeat;
@@ -107,7 +108,7 @@ body {
 .search-icon {
     width: 40px;
     height: 40px;
-    background-image: url('../img/search.png');
+    background-image: url('../img/icons/search.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -116,13 +117,13 @@ body {
 .user-icon {
     width: 40px;
     height: 40px;
-    background-image: url('../img/user.png');
+    background-image: url('../img/icons/user.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/*Главная страница*/
+/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
 .lakrica {
     text-align: center;
     margin-top: 100px;
@@ -155,7 +156,6 @@ body {
     flex-direction: column;
 }
 
-/* навигация главной */
 .navv {
     display: flex;
     align-items: center;
@@ -193,7 +193,6 @@ body {
     color: #1E2A2E;
 }
 
-/* центр главной */
 .centcont {
     text-align: center;
     width: 70%;
@@ -225,7 +224,6 @@ body {
     background-color: #9A4A32;
 }
 
-/* форма выбора языка на главной */
 .langform {
     position: absolute;
     left: 5%;
@@ -300,7 +298,6 @@ body {
     background-color: #9A4A32;
 }
 
-/* марафон (главная) */
 .maraf {
     margin: 125px auto;
     display: flex;
@@ -356,7 +353,7 @@ body {
     right: 5%;
     top: 50%;
     transform: translateY(-50%) rotate(-15deg);
-    background-image: url('../img/phonemar');
+    background-image: url('../img/phonemar.png');
     box-shadow: 0 10px 30px rgba(132, 71, 17, 0.884);
     background-size: cover;
     background-repeat: no-repeat;
@@ -385,7 +382,6 @@ body {
     word-wrap: break-word;
 }
 
-/* карточки скидок (главная) */
 .kartochk {
     margin-top: 60px;
     display: flex;
@@ -504,7 +500,7 @@ body {
 }
 
 .gift {
-    background-image: url('../img/giftt.png');
+    background-image: url('../img/icons/giftt.png');
     width: 80px;
     height: 80px;
     background-size: contain;
@@ -517,7 +513,6 @@ body {
     flex: 1;
 }
 
-/* слайдер преподавателей */
 .prepsection {
     margin: 75px 0;
     width: 100%;
@@ -607,7 +602,7 @@ body {
     align-self: center;
 }
 
-/* ===== КУРСЫ ===== */
+/* ===== СТРАНИЦА КУРСЫ ===== */
 .coursses {
     max-width: none;
     margin: 80px auto;
@@ -660,9 +655,9 @@ body {
     box-shadow: 0 15px 40px rgba(132, 71, 10, 0.9);
 }
 
-.eng1 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/english); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.eng2 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/eng2); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.eng3 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/eng3); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.eng1 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/english.png); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.eng2 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/eng2.png); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.eng3 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/eng3.png); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .chin1 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/chin1.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .chin2 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/chin2.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .chin3 { background: linear-gradient(rgba(224,255,252,0.5), rgba(210,234,255,0.5)), url(../img/chin3.avif); background-size: cover; background-position: center; background-repeat: no-repeat; }
@@ -730,7 +725,7 @@ body {
     background-color: #9A4A32;
 }
 
-/* широкий блок китайского */
+/* ===== ШИРОКИЙ БЛОК КИТАЙСКОГО ===== */
 .chinaas {
     background: linear-gradient(135deg, #8CBAA8 0%, #6B9A86 100%);;
     padding: 60px 40px;
@@ -762,7 +757,7 @@ body {
     max-width: none;
 }
 
-/*Контакты*/
+/* ===== КОНТАКТЫ ===== */
 .contactpage {
     padding: 60px 0 0 0;
 }
@@ -852,7 +847,7 @@ body {
     background-color: #9A4A32;
 }
 
-/*О нас*/
+/* ===== О НАС ===== */
 .aboutpage {
     max-width: 1400px;
     margin: 60px auto;
@@ -934,7 +929,7 @@ body {
     line-height: 1.5;
 }
 
-/* Отзывы */
+/* ===== ОТЗЫВЫ ===== */
 .scrollotsuvy {
     margin: 80px 0;
     background-color: #8CBAA8;
@@ -999,7 +994,7 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 auto 20px;
-    background-image: url('../img/user.png');
+    background-image: url('../img/icons/user.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1027,7 +1022,7 @@ body {
     color: #B85D3F;
 }
 
-/*Личный кабинет*/
+/* ===== ЛИЧНЫЙ КАБИНЕТ ===== */
 .person {
     min-height: 70vh;
     display: flex;
@@ -1136,7 +1131,8 @@ body {
 .ssilkreg a:hover, .ssilklog a:hover {
     text-decoration: underline;
 }
-/*Футер*/
+
+/* ===== ФУТЕР ===== */
 footer {
     background-color: #C95E3A;
     color: #FFFFFF;
@@ -1182,7 +1178,7 @@ footer .info {
 }
 
 .VK {
-    background-image: url('../img/VK.png');
+    background-image: url('../img/icons/VK.png');
     width: 80px;
     height: 80px;
     background-size: contain;
@@ -1191,7 +1187,7 @@ footer .info {
 }
 
 .Max {
-    background-image: url('../img/icon-max-bl.png');
+    background-image: url('../img/icons/icon-max.png');
     width: 55px;
     height: 55px;
     background-size: contain;
@@ -1200,7 +1196,7 @@ footer .info {
 }
 
 .odnokl {
-    background-image: url('../img/odnokl.png');
+    background-image: url('../img/icons/odnokl.png');
     width: 60px;
     height: 60px;
     background-size: contain;
@@ -1232,7 +1228,8 @@ footer p {
     text-align: center;
     margin-top: 80px;
 }
-/* Кнопка переключения темы с иконкой */
+
+/* ===== ОБЩИЕ ЭЛЕМЕНТЫ И АДАПТИВ ===== */
 .floating-theme-icon {
     position: fixed;
     top: 20px;
@@ -1251,11 +1248,11 @@ footer p {
 .floating-theme-icon:hover {
     transform: scale(1.2);
 }
-/* ===== БУРГЕР (скрыт на десктопе) ===== */
+
 .burger-icon {
-    display: none; /* Скрыт по умолчанию */
+    display: none;
 }
-/* ===== ИКОНКИ В НАВИГАЦИИ ===== */
+
 .navv-menu img,
 .navv-menu2 img {
     width: 40px;
@@ -1263,27 +1260,26 @@ footer p {
     display: block;
     object-fit: contain;
 }
-/* Базовые стили (Десктоп > 768px) */
+
 .navv {
-    position: relative; /* Чтобы мобильное меню позиционировалось относительно шапки */
+    position: relative;
 }
 .burger-icon {
-    display: none; /* Скрыт на десктопе */
+    display: none;
 }
 #menuPanel {
-    display: none; /* Скрыт на десктопе */
+    display: none;
 }
 .navv-menu ul {
-    display: flex; /* Десктопное меню видно */
+    display: flex;
 }
 
-/* Мобильная версия (<= 768px) */
 @media (max-width: 768px) {
     .navv-menu ul {
-        display: none; /* Прячем горизонтальное меню */
+        display: none;
     }
     .burger-icon {
-        display: block; /* Показываем бургер */
+        display: block;
         cursor: pointer;
     }
     #menuPanel {
@@ -1294,10 +1290,10 @@ footer p {
         background: #FFF9F0;
         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         z-index: 100;
-        display: none; /* Скрыто по умолчанию */
+        display: none;
     }
     #menuPanel.active {
-        display: block; /* Показываем, когда JS добавляет класс .active */
+        display: block;
     }
     #menuPanel ul {
         list-style: none;
