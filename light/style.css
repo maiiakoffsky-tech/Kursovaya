@@ -72,7 +72,6 @@ body {
 }
 
 .logo2 {
-    background-image: url('../img/icons/logosv.svg');
     height: 70px;
     width: 70px;
     background-repeat: no-repeat;
@@ -135,7 +134,7 @@ body {
 }
 
 .name1 {
-    font-family: k2d;
+    font-family: k2d, jost;
     color: #2B3732;
     font-size: 40px;
     margin-top: 5px;
@@ -236,13 +235,16 @@ body {
     padding: 10px;
     box-shadow: 0 10px 30px rgba(132, 71, 17, 0.884);
 }
-
+.langform h3 {
+    font-family: jost;
+    text-align: center;
+}
 .langform h4 {
     font-family: jost;
     font-size: 20px;
     color: #2B3732;
+    text-align: center;
     margin-top: 10px;
-    margin-left: 30px;
 }
 
 .langform .subtitle {
@@ -446,6 +448,7 @@ body {
 .zach {
     text-decoration: line-through;
     font-size: 22px;
+    font-family: jost;
     color: #B85D3F;
     display: block;
     margin-top: 40px;
@@ -527,7 +530,7 @@ body {
 }
 
 .tittleprep {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     font-family: jost;
     margin-top: 175px;
@@ -1215,8 +1218,8 @@ footer p {
 .rejim {
     text-align: right;
     margin-right: 60px;
+    font-family: jost;
 }
-
 .adress {
     margin-top: 30px;
 }
@@ -1274,40 +1277,245 @@ footer p {
     display: flex;
 }
 
-@media (max-width: 768px) {
-    .navv-menu ul {
-        display: none;
+/* Блок розыгрыша */
+.rosygrysh {
+    margin: 60px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.rosygryshcard {
+    background: #FFF9F0;
+    border-radius: 48px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(97, 50, 8, 0.614);
+    
+}
+
+.rosygryshphoto {
+    margin-bottom: 24px;
+}
+
+.rosygryshimg {
+    max-width: 180px;
+    border-radius: 32px;
+}
+
+.rosygryshtitle {
+    font-family: k2d, jost;
+    font-size: 28px;
+    font-weight: 500;
+    color: #B85D3F;
+    margin-bottom: 20px;
+}
+
+.rosygryshmaintext {
+    font-family: jost;
+    font-size: 16px;
+    color: #1E2A2E;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rosygryshcondition {
+    font-family: jost;
+    font-size: 15px;
+    color: #6B6B6B;
+    margin-bottom: 30px;
+}
+
+.rosygryshbutton {
+    background-color: #B85D3F;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-family: jost;
+    font-weight: 500;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rosygryshbutton:hover {
+    background-color: #9A4A32;
+    transform: scale(1.02);
+}
+
+.rosygryshdate {
+    font-family: jost;
+    font-size: 13px;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* Блок про корейский язык */
+.korean {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 0 20px;
+}
+
+.koreaninner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.koreantext {
+    flex: 1;
+    min-width: 280px;
+}
+
+.koreantitle {
+    font-family: k2d, jost;
+    font-size: 32px;
+    font-weight: 500;
+    color: #1E2A2E;
+    margin-bottom: 24px;
+}
+
+.koreanp {
+    font-family: jost;
+    font-size: 16px;
+    color: #2c2c2e;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.koreanbtn {
+    display: inline-block;
+    background-color: #B85D3F;
+    color: white;
+    padding: 12px 28px;
+    font-family: jost;
+    font-size: 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.koreanbtn:hover {
+    background-color: #9A4A32;
+    transform: scale(1.02);
+}
+
+.koreanimage {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+.koreanimage img {
+    box-shadow: 0 10px 30px rgba(132, 71, 17, 0.884);
+}
+.koreanimg {
+    max-width: 100%;
+    border-radius: 32px;
+    box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
+}
+/* Соцсети на странице контактов */
+.soclinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.soclink {
+    display: inline-block;
+    transition: all 0.3s ease;
+    line-height: 0;
+}
+
+.soclink img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.soclink:hover {
+    transform: scale(1.15);
+}
+
+.soclink.maxx img {
+    width: 50px;
+    height: 50px;
+}
+/* Блок про эстетику занятий */
+.studyblock {
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 40px;
+    animation: sixseven 0.7s ease forwards;
+}
+
+.studycontent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.studyimages {
+    flex: 1;
+    min-width: 300px;
+}
+
+.studyimg {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 32px;
+    box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.422);
+}
+
+.studytext {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.studytitle {
+    font-family: 'k2d', 'jost', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #B85D3F;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.studydesc {
+    font-family: 'jost', sans-serif;
+    font-size: 16px;
+    color: #1E2A2E;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.studydesc strong {
+    color: #B85D3F;
+    font-weight: 600;
+}
+
+@keyframes sixseven {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
     }
-    .burger-icon {
-        display: block;
-        cursor: pointer;
-    }
-    #menuPanel {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #FFF9F0;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        z-index: 100;
-        display: none;
-    }
-    #menuPanel.active {
-        display: block;
-    }
-    #menuPanel ul {
-        list-style: none;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    #menuPanel a {
-        text-decoration: none;
-        color: #1E2A2E;
-        font-size: 18px;
-        font-family: jost;
-        display: block;
-        padding: 5px 0;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

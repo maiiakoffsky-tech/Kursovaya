@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -10,19 +10,24 @@
         media="screen and (min-width: 600px) and (max-width: 1024px)">
     <link id="mobile-css" rel="stylesheet" href="light/mobile.css" media="screen and (max-width: 599px)">
     <script src="tema.js"></script>
-    <title>Курсы иностранных языков Verbba ~ О нас</title>
-    <meta name="description" content="Преподаватели-носители, разговорная методика, гарантия результата. Узнайте почему студенты выбирают Verbba.">
+    <link rel="icon" type="image/png" href="img/icons/icon-max.png">
+
+    <title>Курсы иностранных языков Verbba | О нас</title>
+    <meta name="description"
+        content="Преподаватели-носители, разговорная методика, гарантия результата. Узнайте почему студенты выбирают Verbba.">
     <meta name="keywords" content="о школе Verbba, преподаватели языков, отзывы учеников, методика обучения">
 </head>
 
 <body>
-    <img id="themeToggle" class="floating-theme-icon" src="img/icons/vkltemn.svg" alt="Тема">
+    <img id="themeToggle" class="floating-theme-icon" src="img/icons/vkltemn.svg" alt="Переключение темы">
 
     <div class="header2">
         <div class="navv2">
-            <div class="leftlogo2">
-                <div class="logo2"></div>
-                <h2 class="name2">Verbba</h2>
+            <div class="leftlogo2" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="index.html">
+                    <img itemprop="logo" src="img/icons/logosv.svg" alt="Verbba" style="width: 70px;">
+                </a>
+                <div class="name2">Verbba</div>
             </div>
             <div class="burger-icon" id="burgerIcon">
                 <img src="img/icons/burger.svg" alt="Меню">
@@ -67,26 +72,53 @@
                         <img src="img/icons/soo.png" alt="Учитесь без привязки к расписанию">
                     </div>
                     <h3 class="prostittle">Учитесь без привязки к расписанию</h3>
-                    <p class="kardtxt">Все видео-уроки, методические материалы и тесты остаются в вашем личном кабинете. Вы сами выбираете время и темп занятий — мы лишь даём структуру.</p>
+                    <p class="kardtxt">Все видео-уроки, методические материалы и тесты остаются в вашем личном кабинете.
+                        Вы сами выбираете время и темп занятий — мы лишь даём структуру.</p>
                 </div>
                 <div class="proscard">
                     <div class="iconpros">
                         <img src="img/icons/prog.png" alt="Прозрачный прогресс">
                     </div>
                     <h3 class="prostittle">Прозрачный прогресс</h3>
-                    <p class="kardtxt">Вы видите пройденные уроки, оставшиеся цели и статистику изучения языка. Все достижения фиксируются в личном кабинете.</p>
+                    <p class="kardtxt">Вы видите пройденные уроки, оставшиеся цели и статистику изучения языка. Все
+                        достижения фиксируются в личном кабинете.</p>
                 </div>
                 <div class="proscard">
                     <div class="iconpros">
                         <img src="img/icons/raspis.png" alt="Поддержка без фанфар">
                     </div>
                     <h3 class="prostittle">Поддержка без фанфар</h3>
-                    <p class="kardtxt">Если застряли на теме — пишете в чат поддержки, и мы поможем разобраться без лишнего шума. Все видео, материалы и тесты остаются в вашем личном кабинете.</p>
+                    <p class="kardtxt">Если застряли на теме — пишете в чат поддержки, и мы поможем разобраться без
+                        лишнего шума. Все видео, материалы и тесты остаются в вашем личном кабинете.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Отзывы с кнопкой "Показать все" -->
+        <!-- Блок про эстетику занятий и преподавателей -->
+        <section class="studyblock">
+            <div class="studycontent">
+                <div class="studyimages">
+                    <img src="img/esteticaourschool.jpg" alt="Эстетика занятий тетрадка и чай" class="studyimg"
+                        loading="lazy">
+                </div>
+                <div class="studytext">
+                    <h2 class="studytitle">Как проходят занятия в нашей школе</h2>
+                    <p class="studydesc"><strong>Курсы английского и китайского языка</strong> проходят в уютной
+                        онлайн-атмосфере. Все материалы остаются в личном кабинете, а видеосвязь с преподавателем
+                        создаёт эффект присутствия.</p>
+                    <p class="studydesc">Тетрадки, чай, любимая музыка — учитесь оттуда, откуда вам комфортно. Наши
+                        <strong>преподаватели китайского и английского</strong> всегда на связи и готовы помочь.</p>
+                    <p class="studydesc">Индивидуальные занятия и мини-группы до 5 человек. Акцент на разговорную речь и
+                        живое общение.</p>
+                </div>
+                <div class="studyimages">
+                    <img src="img/teachersaboutus.jpg" alt="Видеосвязь с преподавателями" class="studyimg"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
         <div class="scrollotsuvy">
             <h2 class="tittleotsuvy">Отзывы</h2>
 
@@ -99,7 +131,8 @@
                                 <h3>Анна М.</h3>
                             </div>
                         </div>
-                        <p class="txtots">Я боялась говорить на английском лет 15, но с Verbba я наконец-то перестала стесняться и начала свободно общаться.</p>
+                        <p class="txtots">Я боялась говорить на английском лет 15, но с Verbba я наконец-то перестала
+                            стесняться и начала свободно общаться.</p>
                         <div class="ratots">★★★★★</div>
                     </div>
                     <div class="kardots">
@@ -109,7 +142,8 @@
                                 <h3>Михаил К.</h3>
                             </div>
                         </div>
-                        <p class="txtots">Нужен был немецкий для переезда, и Verbba помогла мне подготовиться за полгода. Теперь я живу и работаю в Берлине.</p>
+                        <p class="txtots">Нужен был немецкий для переезда, и Verbba помогла мне подготовиться за
+                            полгода. Теперь я живу и работаю в Берлине.</p>
                         <div class="ratots">★★★★★</div>
                     </div>
                     <div class="kardots">
@@ -119,7 +153,8 @@
                                 <h3>Екатерина В.</h3>
                             </div>
                         </div>
-                        <p class="txtots">Учила французский в университете, но говорить не могла. Verbba дала мне практику с носителями — теперь я свободно обсуждаю фильмы и книги.</p>
+                        <p class="txtots">Учила французский в университете, но говорить не могла. Verbba дала мне
+                            практику с носителями — теперь я свободно обсуждаю фильмы и книги.</p>
                         <div class="ratots">★★★★★</div>
                     </div>
                     <div class="kardots">
@@ -129,7 +164,8 @@
                                 <h3>Дмитрий П.</h3>
                             </div>
                         </div>
-                        <p class="txtots">Готовился к IELTS с Verbba — сдал на 7.5 баллов. Отличный подход и поддержка на всех этапах.</p>
+                        <p class="txtots">Готовился к IELTS с Verbba — сдал на 7.5 баллов. Отличный подход и поддержка
+                            на всех этапах.</p>
                         <div class="ratots">★★★★★</div>
                     </div>
                     <div class="kardots">
@@ -139,7 +175,8 @@
                                 <h3>Ольга С.</h3>
                             </div>
                         </div>
-                        <p class="txtots">Изучаю испанский с нуля, и Verbba сделала этот процесс лёгким и увлекательным. Никакой скуки — только живой язык.</p>
+                        <p class="txtots">Изучаю испанский с нуля, и Verbba сделала этот процесс лёгким и увлекательным.
+                            Никакой скуки — только живой язык.</p>
                         <div class="ratots">★★★★★</div>
                     </div>
                 </div>
@@ -148,20 +185,31 @@
     </main>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name" style="display:none;">Verbba</span>
             <p class="titlefoot">Verbba — языковая школа нового поколения</p>
-            <p class="adress">Адрес: г. Москва, ул. Тверская, д. 15, стр. 2 (м. «Тверская», выход в сторону Тверского
-                бульвара)</p>
-            <p class="info">+7 (495) 123-45-67 — администратор
-                📧 E-mail: info@verbba.ru
-                🌐 Сайт: www.verbba.ru
-                +7 (916) 987-65-43 — VK / Telegram</p>
-            <p class="rejim">🕒 Режим работы:<br>Пн–Пт: 09:00 – 21:00<br>Сб: 10:00 – 18:00<br>Вс: выходной</p>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <p class="adress">Адрес: <span itemprop="streetAddress">г. Москва, ул. Тверская, д. 15, стр. 2</span>
+                    <span itemprop="addressLocality">(м. «Тверская», выход в сторону Тверского бульвара)</span>
+                </p>
+            </div>
+            <div class="info">
+                <span itemprop="telephone">+7 (495) 123-45-67</span> — администратор<br>
+                📧 E-mail: <span itemprop="email">info@verbba.ru</span><br>
+                🌐 Сайт: <span itemprop="url">www.verbba.ru</span><br>
+                <span itemprop="telephone">+7 (916) 987-65-43</span> — VK / Telegram
+            </div>
+            <div class="rejim">
+                🕒 Режим работы:<br>
+                Пн–Пт: 09:00 – 21:00<br>
+                Сб: 10:00 – 18:00<br>
+                Вс: выходной
+            </div>
         </div>
         <div class="lenta">
-            <div class="VK"></div>
-            <div class="Max"></div>
-            <div class="odnokl"></div>
+            <a href="https://vk.com/maya_kote" class="VK"></a>
+            <a href="https://t.me/max_verbba" class="Max"></a>
+            <a href="https://ok.ru/verbba" class="odnokl"></a>
         </div>
         <p class="copyright">© 2026 Verbba. Все права защищены.</p>
     </footer>

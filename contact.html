@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="light/style.css" media="screen and (min-width: 1025px)">
     <link id="theme-css" rel="stylesheet" href="light/style.css">
-<link id="tablet-css" rel="stylesheet" href="light/tablet.css" media="screen and (min-width: 600px) and (max-width: 1024px)">
-<link id="mobile-css" rel="stylesheet" href="light/mobile.css" media="screen and (max-width: 599px)">
+    <link id="tablet-css" rel="stylesheet" href="light/tablet.css" media="screen and (min-width: 600px) and (max-width: 1024px)">
+    <link id="mobile-css" rel="stylesheet" href="light/mobile.css" media="screen and (max-width: 599px)">
     <script src="tema.js"></script>
-    <title>Курсы иностранных языков Verbba ~ Наши контакты</title>
+    <title>Курсы иностранных языков Verbba | Наши контакты</title>
     <meta name="description" content="Заинтересовали наши качественные курсы с которыми вы заговорите на иностранном языке как на родном? Свяжитесь с нами.">
     <meta name="keywords" content="контакты языковой школы, курсы языков удаленно, телефон Verbba, записаться на урок">
 </head>
 
 <body>
     <img id="themeToggle" class="floating-theme-icon" src="img/icons/vkltemn.svg" alt="Тема">
+
     <div class="header2">
         <div class="navv2">
             <div class="leftlogo2">
-                <div class="logo2"></div>
+                <div class="logo2" itemscope itemtype="http://schema.org/Organization">
+                    <a itemprop="url" href="index.html">
+                        <img itemprop="logo" src="img/icons/logosv.svg" alt="Verbba">
+                    </a>
+                </div>
                 <h2 class="name2">Verbba</h2>
             </div>
             <div class="burger-icon" id="burgerIcon">
@@ -49,24 +54,29 @@
 
     <main class="contactpage">
         <div class="contactboxx">
-            <!-- Левая колонка: контактная информация -->
-            <div class="continfo">
+            <!-- Левая колонка: контактная информация с микроразметкой -->
+            <div class="continfo" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name" style="display:none;">Verbba</span>
+                
                 <h1 class="conttittle">Напишите нам</h1>
-                <p class="contsub">Мы на связи с 9:00 до 21:00. Ответим на любые вопросы о курсах и обучении.</p>
+                <p class="contsub">Мы на связи с 9:00 до 21:00. Ответим на любые вопросы о <strong>курсах английского языка</strong>, <em>изучении китайского</em> и <u>других иностранных языков</u>.</p>
 
                 <div class="infocont">
                     <div class="infotxt">
                         <p class="infolablee">Телефон</p>
-                        <p class="infoval">+7 (495) 123-45-67</p>
-                        <p class="infoval">+7 (916) 987-65-43 (Макс/Telegram)</p>
+                        <p class="infoval" itemprop="telephone">+7 (495) 123-45-67</p>
+                        <p class="infoval" itemprop="telephone">+7 (916) 987-65-43 (Макс/Telegram)</p>
                     </div>
                     <div class="infotxt">
                         <p class="infolablee">Email</p>
-                        <p class="infoval">info@verbba.ru</p>
+                        <p class="infoval" itemprop="email">info@verbba.ru</p>
                     </div>
-                    <div class="infotxt">
+                    <div class="infotxt" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <p class="infolablee">Адрес</p>
-                        <p class="infoval">г. Москва, ул. Тверская, д. 15, стр. 2</p>
+                        <p class="infoval">
+                            <span itemprop="addressLocality">Москва</span>,
+                            <span itemprop="streetAddress">ул. Тверская, д. 15, стр. 2</span>
+                        </p>
                         <p class="infoval">(м. «Тверская», выход в сторону Тверского бульвара)</p>
                     </div>
                     <div class="infotxt">
@@ -74,6 +84,24 @@
                         <p class="infoval">Пн–Пт: 09:00 – 21:00</p>
                         <p class="infoval">Сб: 10:00 – 18:00</p>
                         <p class="infoval">Вс: выходной</p>
+                    </div>
+
+                    <!-- Блок соцсетей -->
+                    <div class="infotxt soc">
+                        <p class="infolablee">Мы в соцсетях</p>
+                        <div class="soclinks">
+                            <a href="https://vk.com/maya_kote" class="soclink"><img src="img/icons/vkcont.png" alt="vk-icon"></a>
+                            <a href="https://t.me/+h60jPxKUJJEzZmEy" class="soclink"><img src="img/icons/teleg.png" alt="Telegram"></a>
+                            <a href="https://ok.ru/verbba" class="soclink"><img src="img/icons/odnoklcontact.png" alt="Одноклассники"></a>
+                            <a href="https://t.me/max_verbba" class="soclink maxx"><img src="img/icons/max.webp" alt="Макс"></a>
+                        </div>
+                    </div>
+
+                    <!-- Ссылки на статьи -->
+                    <div class="infotxt">
+                        <p class="infolablee">Полезные статьи</p>
+                        <p class="infoval"><a href="index.html#rosygrysh">Розыгрыш абонемента на китайский</a></p>
+                        <p class="infoval"><a href="index.html#korean">Почему стоит учить корейский язык</a></p>
                     </div>
                 </div>
             </div>
@@ -91,11 +119,11 @@
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer-content">
             <p class="titlefoot">Verbba — языковая школа нового поколения</p>
-            <p class="adress">Адрес: г. Москва, ул. Тверская, д. 15, стр. 2 (м. «Тверская», выход в сторону Тверского
-                бульвара)</p>
+            <p class="adress">Адрес: г. Москва, ул. Тверская, д. 15, стр. 2 (м. «Тверская», выход в сторону Тверского бульвара)</p>
             <p class="info">+7 (495) 123-45-67 — администратор<br>
                 📧 E-mail: info@verbba.ru<br>
                 🌐 Сайт: www.verbba.ru<br>
@@ -106,9 +134,9 @@
                 Вс: выходной</p>
         </div>
         <div class="lenta">
-            <div class="VK"></div>
-            <div class="Max"></div>
-            <div class="odnokl"></div>
+            <a href="https://vk.com/maya_kote" class="VK"></a>
+            <a href="https://t.me/max_verbba" class="Max"></a>
+            <a href="https://ok.ru/verbba" class="odnokl"></a>
         </div>
         <p class="copyright">© 2026 Verbba. Все права защищены.</p>
     </footer>

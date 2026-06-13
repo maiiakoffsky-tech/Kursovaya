@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"> <!--Объявление карты и правил для картинок-->
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!--Главная -->
+  <!--Главная-->
   <url>
     <loc>https://maiiakoffsky.ru/index.html</loc>
     <lastmod>2026-06-13</lastmod>
@@ -31,6 +31,10 @@
     </image:image>
     <image:image>
       <image:loc>https://maiiakoffsky.ru/img/icons/giftt.png</image:loc>
+    </image:image>
+    <!-- Новая картинка для корейской статьи -->
+    <image:image>
+      <image:loc>https://maiiakoffsky.ru/img/bts_korea.jpg</image:loc>
     </image:image>
   </url>
 
@@ -97,7 +101,7 @@
     </image:image>
   </url>
 
-  <!---Вход-->
+  <!--Вход-->
   <url>
     <loc>https://maiiakoffsky.ru/person.html</loc>
     <lastmod>2026-06-13</lastmod>

@@ -1445,3 +1445,48 @@ footer p {
     display: block;
     object-fit: contain;
 }
+/* Темная тема для блока розыгрыша */
+body.dark .rosygryshcard {
+    background: #2B3732;
+}
+
+body.dark .rosygryshtitle {
+    color: #8CBAA8;
+}
+
+body.dark .rosygryshmaintext {
+    color: #FFF9F0;
+}
+
+body.dark .rosygryshcondition {
+    color: #BBB;
+}
+
+body.dark .rosygryshdate {
+    color: #888;
+}
+
+/* Темная тема для блока корейского языка */
+body.dark .korean .koreantitle {
+    color: #FFF9F0;
+}
+
+body.dark .korean .koreanp {
+    color: #DDD;
+}
+
+/* Исправление h1 шрифта везде */
+h1, .name1 {
+    font-family: k2d, jost;
+    color: #8CBAA8;
+    font-size: 40px;
+    margin-top: 5px;
+}
+.koreantext, .koreantitle, .koreanp {
+    color: #FFF9F0;
+}
+/* Дополнительно для главной страницы если h1 отдельный */
+body.dark h1, 
+body.dark .name1 {
+    color: #8CBAA8;
+}
