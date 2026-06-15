@@ -3,6 +3,7 @@ Disallow: /light/
 Disallow: /dark/
 Disallow: /img/
 Disallow: /registr.html
+Disallow: /404.html
 Allow: /light/*.css
 Allow: /dark/*.css
 Sitemap: https://maiiakoffsky.ru/sitemap.xml

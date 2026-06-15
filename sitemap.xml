@@ -116,5 +116,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-
+  <!-- 404 страница -->
+<url>
+  <loc>https://maiiakoffsky.ru/404.html</loc>
+  <lastmod>2026-06-14</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.0</priority>
+</url>
 </urlset>

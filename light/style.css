@@ -25,9 +25,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== ЛОГОТИПЫ И ОБЩИЕ ЭЛЕМЕНТЫ ===== */
 .logo {
-    background-image: url("../img/icons/logosv.svg");
     width: 150px;
     height: 170px;
     background-position: center;
@@ -1402,11 +1400,6 @@ footer p {
     margin-top: 10px;
 }
 
-.koreanbtn:hover {
-    background-color: #9A4A32;
-    transform: scale(1.02);
-}
-
 .koreanimage {
     flex: 1;
     min-width: 280px;
@@ -1490,7 +1483,8 @@ footer p {
     font-family: 'k2d', 'jost', sans-serif;
     font-size: 32px;
     font-weight: 600;
-    color: #B85D3F;
+    color:#538b73;
+;
     margin-bottom: 24px;
     text-align: center;
 }
@@ -1505,7 +1499,7 @@ footer p {
 }
 
 .studydesc strong {
-    color: #B85D3F;
+    color: #538b73;
     font-weight: 600;
 }
 
@@ -1518,4 +1512,12 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+.microrsm_foot {
+    font-size: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
 }
